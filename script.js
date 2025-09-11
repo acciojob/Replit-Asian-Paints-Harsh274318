@@ -1,32 +1,31 @@
-//your JS code here. If required.
-let changeBtn = document.getElementById("change_button");
-    let resetBtn = document.getElementById("Reset");
-    let blockInput = document.getElementById("block_id");
-    let colorInput = document.getElementById("colour_id");
-    let gridItems = document.querySelectorAll(".grid-item");
 
-    function resetGrid() {
-      gridItems.forEach(item => {
-        item.style.backgroundColor = "transparent";
-      });
-    }
-    changeBtn.addEventListener("click", () => {
-      let blockId = blockInput.value;
-      let color = colorInput.value.trim();
-
-      if (!blockId || !color) {
-        alert("Please enter both Block ID and Color!");
-        return;
-      }
-
-      resetGrid();
-
-      let block = document.getElementById(blockId);
-      if (block) {
-        block.style.backgroundColor = color;
-      } else {
-        alert("Invalid Block ID! Please enter between 1 to 9.");
-      }
-    });
-
-    resetBtn.addEventListener("click", resetGrid);
+        let boxId = document.querySelectorAll("#grid-item");
+        let boxByClass = document.querySelectorAll(".Item-box")
+        let colorbtn = document.querySelector("#change_button")
+        let boxNum = document.querySelector("#block_id")
+        let colorName = document.querySelector("#colour_id");
+        let resetBtn = document.querySelector("#Reset");
+           
+        colorbtn.addEventListener("click",changecolor);
+        function changecolor(){
+            let boxNumValue = +boxNum.value;
+            let colorValue = colorName.value;
+           
+            for(t of boxId){
+                  let str = t.innerText;                    
+                if(str == boxNumValue && 1 <= boxNumValue <= 9 ){
+                    console.log(str)
+                    t.style.backgroundColor = colorValue;
+                    
+                }
+                
+            }
+        }
+        resetBtn.addEventListener("click", resetColors);
+        function resetColors(){
+             for(let s of boxId){
+             s.style.backgroundColor = "transparent"
+             }
+            
+        }
+    
