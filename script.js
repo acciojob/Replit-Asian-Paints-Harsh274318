@@ -4,7 +4,7 @@
         let colorbtn = document.querySelector("#change_button")
         let boxNum = document.querySelector("#block_id")
         let colorName = document.querySelector("#colour_id");
-        let resetBtn = document.querySelector("#Reset");
+        let resetBtn = document.querySelector("#reset_button");
            
         colorbtn.addEventListener("click",changecolor);
         function changecolor(){

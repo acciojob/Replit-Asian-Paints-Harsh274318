@@ -1,10 +1,10 @@
-#grid-container{
+.grid-container{
             display: flex;
             width: 342px;
             flex-wrap: wrap;
             height: 342px;
         }
-        #grid-item{
+        .grid-item{
             width: 100px;
             height: 100px;
             border:2px solid rgb(77, 2, 109) ;
@@ -13,5 +13,6 @@
             align-items: center;
             justify-content: center;
             border-radius: 24px;
+			background-color:rgb(0,0,0,0);
             
         }
