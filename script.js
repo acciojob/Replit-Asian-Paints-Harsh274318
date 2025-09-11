@@ -1,5 +1,5 @@
 
-        let boxId = document.querySelectorAll("#grid-item");
+        let boxId = document.querySelectorAll(".grid-item");
         let boxByClass = document.querySelectorAll(".Item-box")
         let colorbtn = document.querySelector("#change_button")
         let boxNum = document.querySelector("#block_id")
