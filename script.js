@@ -24,7 +24,7 @@
         resetBtn.addEventListener("click", resetColors);
         function resetColors(){
              for(let s of boxId){
-             s.style.backgroundColor = "transparent"
+             s.style.backgroundColor = "rgba(0, 0, 0, 0)";
              }
             
         }
