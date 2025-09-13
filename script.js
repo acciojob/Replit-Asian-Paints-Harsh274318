@@ -17,7 +17,7 @@ function changecolor() {
     if (boxNumValue >= 1 && boxNumValue <= 9) {
         for (let t of boxId) {
             let str = t.innerText;
-            
+
             // Check if the box number matches the inner text of the grid item
             if (str == boxNumValue) {
                 // Set the background color to the value from input
