@@ -23,7 +23,7 @@
         resetBtn.addEventListener("click", resetColors);
         function resetColors(){
              for(let s of boxId){
-             s.style.backgroundColor = "rgba(255, 0, 0, 0)";
+             s.style.backgroundColor = "rgba(0, 0, 0, 0)";
              }
             
         }
