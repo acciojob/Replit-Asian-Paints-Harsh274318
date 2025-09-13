@@ -14,7 +14,6 @@
             for(t of boxId){
                   let str = t.innerText;                    
                 if(str == boxNumValue && 1 <= boxNumValue <= 9 ){
-                    console.log(str)
                     t.style.backgroundColor = colorValue;
                     
                 }
@@ -24,7 +23,7 @@
         resetBtn.addEventListener("click", resetColors);
         function resetColors(){
              for(let s of boxId){
-             s.style.backgroundColor = "rgba(0, 0, 0, 0)";
+             s.style.backgroundColor = "rgba(255, 0, 0, 0)";
              }
             
         }

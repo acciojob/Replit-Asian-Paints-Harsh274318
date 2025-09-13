@@ -12,5 +12,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 24px;
+    border-radius: 24px;			
 		}
+#change_button {
+	background-color:rgb(255,0,0);
+}
