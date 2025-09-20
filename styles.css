@@ -1,23 +1,18 @@
 .grid-container {
-    display: flex;
-    width: 342px;
-    flex-wrap: wrap;
-    height: 342px;
-}
+            display: flex;
+            width: 342px;
+            flex-wrap: wrap;
+            height: 342px;
+        }
 
-.grid-item {
-    width: 100px;
-    height: 100px;
-    border: 2px solid rgb(77, 2, 109);
-    margin: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 24px;
-    background-color: rgba(0, 0, 0, 0); /* Transparent background initially */
-}
-
-/* Apply red color when active */
-.grid-item.active {
-    background-color: rgb(255, 0, 0);  /* Red background when active */
-}
+        .grid-item {
+            width: 100px;
+            height: 100px;
+            border: 2px solid rgb(77, 2, 109);
+            margin: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 24px;
+            background-color: rgba(0, 0, 0, 0); 
+		}
