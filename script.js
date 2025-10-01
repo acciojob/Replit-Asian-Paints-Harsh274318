@@ -28,6 +28,6 @@
 
         function resetColors() {
             for (let s of boxId) {
-                s.style.backgroundColor = "";  
+                s.style.backgroundColor ="transparent";  
             }
         }
