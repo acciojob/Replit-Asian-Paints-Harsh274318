@@ -17,11 +17,12 @@
                     if (str == boxNumValue) {
                         t.style.backgroundColor = colorValue;  // Set background color directly
                     }
-                }
-            } else {
-                alert("Please enter a number between 1 and 9.");
-            }
+					else {
+					t.style.backgroundColor = "transparent";            }
         }
+                }
+            }
+			
 
         // Reset the colors of all boxes
         resetBtn.addEventListener("click", resetColors);
