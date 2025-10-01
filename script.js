@@ -28,6 +28,6 @@
 
         function resetColors() {
             for (let s of boxId) {
-                s.style.backgroundColor = "";  // Reset the background color to default
+                s.style.backgroundColor = "";  
             }
         }
